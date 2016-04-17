@@ -60,7 +60,21 @@
     </header>
     <div class="entry">
       
-        
+        <p>Uninformed Search Methods</p>
+<ul>
+<li>Depth-First Search</li>
+<li>Breadth-First Search</li>
+<li>Uniform-Cost Search</li>
+</ul>
+<p>A search problem consists of </p>
+<ul>
+<li>state space</li>
+<li>successor function(with action,costs) such as “north, 1.0”</li>
+<li>srart state and goal test</li>
+</ul>
+<p>A solution is a sequence of actions (a plan) which trasforms the start state to  a goal state</p>
+<p>例子:<br><img src="../images/cs188-1-1.png" alt=""></p>
+
       
     </div>
     <footer>
@@ -92,7 +106,10 @@
     </header>
     <div class="entry">
       
-        <p>$ hexo init blog<br>$ cd blog<br>$ npm install<br>for testing:<br>$ hexo server    </p>
+        <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>install nvm<br>$ git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a> ~/.nvm</p>
+<h2 id="source-nvm-nvm-sh"><a href="#source-nvm-nvm-sh" class="headerlink" title="$ source ~/.nvm/nvm.sh"></a>$ source ~/.nvm/nvm.sh</h2><p>check nvm<br>$ nvm ls-remote<br>$ nvm install 0.12.7 (or other version)<br>$ node -v (check version)</p>
+<h2 id="nvm-alias-default-v0-12-7"><a href="#nvm-alias-default-v0-12-7" class="headerlink" title="$ nvm alias default v0.12.7"></a>$ nvm alias default v0.12.7</h2><p>add to .bashrc<br>if [[ -s ~/.nvm/nvm.sh ]];<br> then source ~/.nvm/nvm.sh<br>fi</p>
+<p>$ hexo init blog<br>$ cd blog<br>$ npm install<br>for testing:<br>$ hexo server    </p>
 <p>create a github repository</p>
 <p>open blog/_config.yml<br>deploy:<br>    type: git<br>    repository: xxxx.github.io.git<br>    branch: master</p>
 <p>$ npm install hexo-deployer-git –save<br>$ hexo deploy -g<br>then you can see your blog in (username).github.io</p>
@@ -127,7 +144,7 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Buscar">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
