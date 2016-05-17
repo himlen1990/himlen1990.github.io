@@ -4,8 +4,7 @@
   <meta charset="utf-8">
   
   
-  <meta name="description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or oth" />
+  <meta name="description" content="GMM的原理在网上已经有讲得非常好的文章，（见http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。" />
   
 
   
@@ -14,21 +13,18 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or oth" />
   
   
   
-  <title>hexo备忘 | Hexo</title>
+  <title>GMM暴力讲解 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
+  <meta name="description" content="GMM的原理在网上已经有讲得非常好的文章，（见http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo备忘">
-<meta property="og:url" content="http://yoursite.com/2016/04/17/hexo备忘/index.html">
+<meta property="og:title" content="GMM暴力讲解">
+<meta property="og:url" content="http://yoursite.com/2016/05/17/GMM暴力讲解/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
-<meta property="og:updated_time" content="2016-05-01T06:47:02.000Z">
+<meta property="og:description" content="GMM的原理在网上已经有讲得非常好的文章，（见http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。">
+<meta property="og:updated_time" content="2016-05-17T14:54:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo备忘">
-<meta name="twitter:description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
+<meta name="twitter:title" content="GMM暴力讲解">
+<meta name="twitter:description" content="GMM的原理在网上已经有讲得非常好的文章，（见http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -68,7 +64,7 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-hexo备忘" class="post-hexo备忘 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-GMM暴力讲解" class="post-GMM暴力讲解 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -76,39 +72,28 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
         
   
     <h1 class="entry-title article-title">
-      hexo备忘
+      GMM暴力讲解
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/hexo备忘/" data-id="ciobkeaw300041406qr1dmfhd" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/17/GMM暴力讲解/" data-id="ciobkeavp00001406luj59iec" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>install nvm<br>$ git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a> ~/.nvm<br>$ source ~/.nvm/nvm.sh</p>
-<h2 id="check-nvm"><a href="#check-nvm" class="headerlink" title="check nvm "></a>check nvm </h2><p>$ nvm ls-remote<br>$ nvm install 0.12.7 (or other version)<br>$ node -v (check version)<br>$ nvm alias default v0.12.7</p>
-<p>add to .bashrc<br>if [[ -s ~/.nvm/nvm.sh ]];<br> then source ~/.nvm/nvm.sh<br>fi</p>
-<p>$ npm install -g hexo<br>$ hexo init blog<br>$ cd blog<br>$ npm install<br>for testing:<br>$ hexo server    </p>
-<p>create a github repository</p>
-<p>open blog/_config.yml<br>deploy:<br>    type: git<br>    repository: xxxx.github.io.git<br>    branch: master</p>
-<p>$ npm install hexo-deployer-git –save<br>$ hexo deploy -g<br>then you can see your blog in (username).github.io</p>
-<h2 id="everytime-you-change"><a href="#everytime-you-change" class="headerlink" title="everytime you change:"></a>everytime you change:</h2><p>$ hexo deploy -g or hexo d -g</p>
-<h2 id="change-theme"><a href="#change-theme" class="headerlink" title="change theme"></a>change theme</h2><p>copy the theme to your blog/themes file by using git clone xxxx theme/theme_name</p>
-<p>then edit blog/_config.yml</p>
-<p>theme: (theme name)</p>
-<h2 id="write-a-new-blog"><a href="#write-a-new-blog" class="headerlink" title="write a new blog"></a>write a new blog</h2><p>hexo new title</p>
+        <p>GMM的原理在网上已经有讲得非常好的文章，（见<a href="http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。" target="_blank" rel="external">http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。</a></p>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2016/04/17/hexo备忘/">
-    <time datetime="2016-04-17T04:12:48.000Z" class="entry-date">
-        2016-04-17
+    <a href="/2016/05/17/GMM暴力讲解/">
+    <time datetime="2016-05-17T14:43:13.000Z" class="entry-date">
+        2016-05-17
     </time>
 </a>
     
@@ -121,8 +106,8 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2016/04/17/cs188-AI-笔记之uninformed-search/" rel="prev"><span class="meta-nav">←</span> cs188(AI)笔记之uninformed search</a></span>
     
+        <span class="nav-next"><a href="/2016/05/17/numpy备忘/" rel="next">numpy备忘 <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 

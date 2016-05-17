@@ -1,10 +1,8 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   
-  <title>cs188(AI)笔记之uninformed search | Hexo</title>
-  <meta name="author" content="John Doe">
   
   <meta name="description" content="Uninformed Search Methods
 
@@ -15,60 +13,119 @@ Uniform-Cost Search
 A search problem consists of 
 
 state space
-successor function(">
+successor function(" />
+  
+
   
   
+  
+  
+  
+  
+  <title>cs188(AI)笔记之uninformed search | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Uninformed Search Methods
 
-  <meta property="og:title" content="cs188(AI)笔记之uninformed search"/>
-  <meta property="og:site_name" content="Hexo"/>
+Depth-First Search
+Breadth-First Search
+Uniform-Cost Search
+
+A search problem consists of 
+
+state space
+successor function(with action,costs) such as “north, 1.0”
+srart stat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cs188(AI)笔记之uninformed search">
+<meta property="og:url" content="http://yoursite.com/2016/04/17/cs188-AI-笔记之uninformed-search/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Uninformed Search Methods
+
+Depth-First Search
+Breadth-First Search
+Uniform-Cost Search
+
+A search problem consists of 
+
+state space
+successor function(with action,costs) such as “north, 1.0”
+srart stat">
+<meta property="og:image" content="http://yoursite.com/../images/cs188-1-1.png">
+<meta property="og:image" content="http://yoursite.com/../images/cs188-1-2.png">
+<meta property="og:updated_time" content="2016-04-17T08:49:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cs188(AI)笔记之uninformed search">
+<meta name="twitter:description" content="Uninformed Search Methods
+
+Depth-First Search
+Breadth-First Search
+Uniform-Cost Search
+
+A search problem consists of 
+
+state space
+successor function(with action,costs) such as “north, 1.0”
+srart stat">
+<meta name="twitter:image" content="http://yoursite.com/../images/cs188-1-1.png">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
 
   
-    <meta property="og:image" content="undefined"/>
-  
-
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
 </head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Hexo" rel="home">Hexo</a>
+      </h1>
+      
+        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+        <h2 class="site-description"><script>hitokoto();</script></h2>
+      
+    </hgroup>
 
-
-<body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Hexo</a></h1>
-  <h2><a href="/"></a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
 </header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-cs188-AI-笔记之uninformed-search" class="post-cs188-AI-笔记之uninformed-search post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-04-17T07:34:41.000Z"><a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">2016-04-17</a></time>
-      
-      
-  
-    <h1 class="title">cs188(AI)笔记之uninformed search</h1>
+    <h1 class="entry-title article-title">
+      cs188(AI)笔记之uninformed search
+    </h1>
   
 
-    </header>
-    <div class="entry">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/cs188-AI-笔记之uninformed-search/" data-id="ciobkeavu00011406iw63eszb" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
       
         <p>Uninformed Search Methods</p>
 <ul>
@@ -87,105 +144,125 @@ successor function(">
 <h2 id="Seach-algorithm"><a href="#Seach-algorithm" class="headerlink" title="Seach algorithm:"></a>Seach algorithm:</h2><p>当加入cost因素后：<br>DFS和BFS属于非启发式算法（无视cost)<br>uninform cost search UCS 属于启发式算法(基于贪婪算法,cost小的路径优先搜索)</p>
 
       
-    </div>
-    <footer>
-      
-        
-        
-  
-  <div class="tags">
-    <a href="/tags/笔记/">笔记</a>
-  </div>
+    </div><!-- .entry-content -->
 
-        
-  <div class="addthis addthis_toolbox addthis_default_style">
-    
-      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-    
-    
-      <a class="addthis_button_tweet"></a>
-    
-    
-      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <footer class="entry-meta">
+    <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">
+    <time datetime="2016-04-17T07:34:41.000Z" class="entry-date">
+        2016-04-17
+    </time>
+</a>
     
     
-      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
-    
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+  <span class="article-delim">&#8226;</span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
 
-      
-      <div class="clearfix"></div>
     </footer>
-  </div>
 </article>
 
 
-<section id="comment">
-  <h1 class="title">Comments</h1>
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2016/05/01/linux误删了xserver导致不能进入desktop的时候。。。/" rel="prev"><span class="meta-nav">←</span> linux误删了xserver导致不能进入desktop的时候。。。</a></span>
+    
+    
+        <span class="nav-next"><a href="/2016/04/17/hexo备忘/" rel="next">hexo备忘 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
 
-  
-      <div id="fb-root"></div>
-<script>
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
 
-<div class="fb-comments" data-href="http://yoursite.com/2016/04/17/cs188-AI-笔记之uninformed-search/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
-      
-  
-</section>
+
+
+
+
 
 </div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:yoursite.com">
-  </form>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/17/GMM暴力讲解/">GMM暴力讲解</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/17/numpy备忘/">numpy备忘</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/01/linux误删了xserver导致不能进入desktop的时候。。。/">linux误删了xserver导致不能进入desktop的时候。。。</a>
+          </li>
+        
+          <li>
+            <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">cs188(AI)笔记之uninformed search</a>
+          </li>
+        
+          <li>
+            <a href="/2016/04/17/hexo备忘/">hexo备忘</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-content">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记/">笔记</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-content tagcloud">
+      <a href="/tags/笔记/" style="font-size: 10px;">笔记</a>
+    </div>
+  </aside>
+
+  
 </div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2016 John Doe
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
-  
+<script src="/js/jquery-2.0.3.min.js"></script>
 
-  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/笔记/">笔记</a><small>1</small></li>
-  
-  </ul>
-</div>
 
-</aside>
-    <div class="clearfix"></div>
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
   </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2016 John Doe
-  
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
 </body>
 </html>
