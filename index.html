@@ -84,11 +84,13 @@
 
     <div class="entry-content">
       
-        <p>关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。</p>
+        <p>关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。</p>
 <p>Dewolf大神的主页：<a href="https://studywolf.wordpress.com/tag/linear-quadratic-regulator/" target="_blank" rel="external">https://studywolf.wordpress.com/tag/linear-quadratic-regulator/</a><br>git: <a href="https://github.com/studywolf/control" target="_blank" rel="external">https://github.com/studywolf/control</a></p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文:"></a>正文:</h2><p>在经典控制理论中，一个常见的控制器便是linear-quadratic regulator(LQR)。一般我们又把它分为finite-horizon(时间的期间是有限制的，比如说t=120s)和infinite-horizon(时间无限制)的情况。本文中我们只讨论infinite-horizon的情况。</p>
 <p>LQR被用于解决一些特定的问题。首先，它假设你要控制的系统是linear dynamics的，换句话说，你可以用下式来表示这些个系统：</p>
 <p>$\dot{x} = Ax + Bu$</p>
+<p>在这里$x$和$\dot{x}$表示状态和它的时间导数，$u$是输入，A和B把状态和输入作用在其导数上面（当线性系数就对了）。其次，它假定cost function $J$是一个二次形式:</p>
+<p>$J = \int_{0}^{\infty} ((x - x^<em>)^{T}Q(x - x^</em>) + u^{T}Ru){\sl dt}</p>
 
       
     </div><!-- .entry-content -->
