@@ -5,8 +5,7 @@
   
   
   <meta name="description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。
-Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/
-git: https://git" />
+Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://gith" />
   
 
   
@@ -18,21 +17,21 @@ git: https://git" />
   <title>linear-quadratic regulation LQR | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。
-Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/
-git: https://github.com/studywolf/control">
+Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/control
+正文:在经典控制理论中，一个常见的控制器便是lin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="linear-quadratic regulation LQR">
 <meta property="og:url" content="http://yoursite.com/2016/05/28/LQR/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。
-Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/
-git: https://github.com/studywolf/control">
-<meta property="og:updated_time" content="2016-05-28T00:33:39.000Z">
+Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/control
+正文:在经典控制理论中，一个常见的控制器便是lin">
+<meta property="og:updated_time" content="2016-05-28T00:46:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linear-quadratic regulation LQR">
 <meta name="twitter:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。
-Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/
-git: https://github.com/studywolf/control">
+Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/control
+正文:在经典控制理论中，一个常见的控制器便是lin">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -94,8 +93,11 @@ git: https://github.com/studywolf/control">
     <div class="entry-content">
       
         <p>关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。</p>
-<p>Dewolf大神的主页：<a href="https://studywolf.wordpress.com/tag/linear-quadratic-regulator/" target="_blank" rel="external">https://studywolf.wordpress.com/tag/linear-quadratic-regulator/</a></p>
-<h2 id="git-https-github-com-studywolf-control"><a href="#git-https-github-com-studywolf-control" class="headerlink" title="git: https://github.com/studywolf/control"></a>git: <a href="https://github.com/studywolf/control" target="_blank" rel="external">https://github.com/studywolf/control</a></h2>
+<p>Dewolf大神的主页：<a href="https://studywolf.wordpress.com/tag/linear-quadratic-regulator/" target="_blank" rel="external">https://studywolf.wordpress.com/tag/linear-quadratic-regulator/</a><br>git: <a href="https://github.com/studywolf/control" target="_blank" rel="external">https://github.com/studywolf/control</a></p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文:"></a>正文:</h2><p>在经典控制理论中，一个常见的控制器便是linear-quadratic regulator(LQR)。一般我们又把它分为finite-horizon(时间的期间是有限制的，比如说t=120s)和infinite-horizon(时间无限制)的情况。本文中我们只讨论infinite-horizon的情况。</p>
+<p>LQR被用于解决一些特定的问题。首先，它假设你要控制的系统是linear dynamics的，换句话说，你可以用下式来表示这些个系统：</p>
+<p>$x^{.} = Ax + Bu$</p>
+
       
     </div><!-- .entry-content -->
 
@@ -211,6 +213,23 @@ git: https://github.com/studywolf/control">
 
 <div id="bg"></div>
 
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
