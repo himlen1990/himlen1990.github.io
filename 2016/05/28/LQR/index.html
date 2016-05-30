@@ -24,7 +24,7 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。
 Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/contr">
-<meta property="og:updated_time" content="2016-05-29T03:47:25.000Z">
+<meta property="og:updated_time" content="2016-05-30T15:39:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linear-quadratic regulation LQR">
 <meta name="twitter:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。
@@ -102,6 +102,11 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <p>去驱动系统达到目标状态。当对象是使用二次代价函数来评价的线性系统时，这个K就可以被优化。关于LQRs与其延伸的研究已经太多，在这里我们不一一提及。相对地，在这里着重讨论把LQRs应用于非线性系统的情况，而且我们会用有限差分的办法来解决这类问题，如果你手头上有系统模拟的软件的话，有限差分可以使你省去计算动态方程(dynamics equations）的烦恼。</p>
 <h2 id="在非线性系统上使用LQR"><a href="#在非线性系统上使用LQR" class="headerlink" title="在非线性系统上使用LQR:"></a>在非线性系统上使用LQR:</h2><p>你可能已经留意到，非线性系统与LQR的第一个假设，即线性二次型调节器(linear quadratic regulator)是矛盾的。但这并不意味着我们就不能用了，它只意味着我们得到的结果可能不是最优。而且LQR的性能取决于几个条件，其中两个最重要的因素是该系统的非线性程度，和你更新反馈增益矩阵K的频度（多久更新一次K的值）。总之，把LQR应用在非线性系统的时候，我们只需要闭上眼假装这个系统的dynamics是线性的，也就是它们符合形式</p>
 <p>$\dot{x} = Ax + Bu$</p>
+<p>在非线性中，只要间隔取得足够短，理论上我们可以用线性来近似任何函数。因此对于每一段时间间隔，我们都求一次增益矩阵K，并生成这个时间间隔的控制信号。可以想象，系统的非线性性越严重（函数拐点越多），由当前状态生成的K和控制信号U对远离当前状态时的拟合效果就越差。因此K的更新频度是一个重要因素。</p>
+<h2 id="使用有限差分来近似系统dynamics"><a href="#使用有限差分来近似系统dynamics" class="headerlink" title="使用有限差分来近似系统dynamics"></a>使用有限差分来近似系统dynamics</h2><p>我们现在的问题在于怎么找到这个系统近似，怎么计算矩阵A和B来解出K。如果我们知道系统dynamic为</p>
+<p>$ \dot{x} = f(x,u) $</p>
+<p>通过使</p>
+<p>$ A = \frac{\partial f(x,u)}{\partial x}$</p>
 
       
     </div><!-- .entry-content -->
