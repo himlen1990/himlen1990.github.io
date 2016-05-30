@@ -63,6 +63,52 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-ubuntu硬盘分区调整大小" class="post-ubuntu硬盘分区调整大小 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2016/05/31/ubuntu硬盘分区调整大小/">ubuntu硬盘分区调整大小</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/31/ubuntu硬盘分区调整大小/" data-id="ciou6ywu40007xj064qrcebk7" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>1.下载gparted 直接resize</p>
+<ol>
+<li>如果要resize的是根目录 root<br><a href="http://gparted.sourceforge.net/liveusb.php#linux-method-a" target="_blank" rel="external">http://gparted.sourceforge.net/liveusb.php#linux-method-a</a><br>按照 1 或 2 或 3 或 4来操作<br>或者直接用自带的make startup disk????感觉可以有<br>如果用4的话，先下载iso文件<br>然后烧到usb上<br>具体做法（要非常小心，不然会洗掉硬盘分区）<br>插上usb 输入ls /dev/sd<em><br>然后拔掉usb 再重新输入ls /dev/sd</em> 看看哪个少了，比如说/dev/sde,<br>然后执行sudo dd if=/path-to-gparted-live.x.y.z-w.iso of=/dev/sde bs=4M; sync<br>之后参照<a href="http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted" target="_blank" rel="external">http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted</a><br>实际上一路回车就可以。。。</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2016/05/31/ubuntu硬盘分区调整大小/">
+    <time datetime="2016-05-30T15:49:52.000Z" class="entry-date">
+        2016-05-31
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-LQR" class="post-LQR post type-post status-publish format-standard hentry">
     <!---->
 
@@ -78,7 +124,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/28/LQR/" data-id="cioqgi1690001iw06e4osypin" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/28/LQR/" data-id="ciou6ywth0000xj06ce9xpcag" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -100,8 +146,9 @@
 <p>在非线性中，只要间隔取得足够短，理论上我们可以用线性来近似任何函数。因此对于每一段时间间隔，我们都求一次增益矩阵K，并生成这个时间间隔的控制信号。可以想象，系统的非线性性越严重（函数拐点越多），由当前状态生成的K和控制信号U对远离当前状态时的拟合效果就越差。因此K的更新频度是一个重要因素。</p>
 <h2 id="使用有限差分来近似系统dynamics"><a href="#使用有限差分来近似系统dynamics" class="headerlink" title="使用有限差分来近似系统dynamics"></a>使用有限差分来近似系统dynamics</h2><p>我们现在的问题在于怎么找到这个系统近似，怎么计算矩阵A和B来解出K。如果我们知道系统dynamic为</p>
 <p>$ \dot{x} = f(x,u) $</p>
-<p>通过使</p>
+<p>A,B可以通过下式计算</p>
 <p>$ A = \frac{\partial f(x,u)}{\partial x}$ , $ B = \frac{\partial f(x,u)}{\partial u} $</p>
+<p>控制3-link的机械臂的时候，我们假设</p>
 
       
     </div><!-- .entry-content -->
@@ -138,7 +185,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/17/GMM暴力讲解/" data-id="cioqgi15s0000iw06dps2kffi" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/17/GMM暴力讲解/" data-id="ciou6ywtm0001xj06qsw8ngvs" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -182,7 +229,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/17/numpy备忘/" data-id="cioqgi17r0005iw067geeyp24" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/17/numpy备忘/" data-id="ciou6ywu10006xj06pny9638y" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -225,7 +272,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/01/linux误删了xserver导致不能进入desktop的时候。。。/" data-id="cioqgi17u0006iw06xjfk0qvb" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/01/linux误删了xserver导致不能进入desktop的时候。。。/" data-id="ciou6ywtr0003xj069d2581vt" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -268,7 +315,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/cs188-AI-笔记之uninformed-search/" data-id="cioqgi16f0002iw06b67hknm6" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/cs188-AI-笔记之uninformed-search/" data-id="ciou6ywtp0002xj06zfmbj931" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -328,7 +375,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/hexo备忘/" data-id="cioqgi16n0003iw069rb5lcj8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/04/17/hexo备忘/" data-id="ciou6ywty0005xj06bab5qaq2" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -390,6 +437,10 @@
       <ul>
         
           <li>
+            <a href="/2016/05/31/ubuntu硬盘分区调整大小/">ubuntu硬盘分区调整大小</a>
+          </li>
+        
+          <li>
             <a href="/2016/05/28/LQR/">linear-quadratic regulation LQR</a>
           </li>
         
@@ -403,10 +454,6 @@
         
           <li>
             <a href="/2016/05/01/linux误删了xserver导致不能进入desktop的时候。。。/">linux误删了xserver导致不能进入desktop的时候。。。</a>
-          </li>
-        
-          <li>
-            <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">cs188(AI)笔记之uninformed search</a>
           </li>
         
       </ul>

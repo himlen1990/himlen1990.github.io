@@ -4,6 +4,10 @@
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   
+  <meta name="description" content="1.下载gparted 直接resize
+
+如果要resize的是根目录 roothttp://gparted.sourceforge.net/liveusb.php#linux-method-a按照 1 或 2 或 3 或 4来操作或者直接用自带的make startup disk????感觉可以" />
+  
 
   
   
@@ -11,17 +15,24 @@
   
   
   
-  <title>Tag: 笔记 | Hexo</title>
+  <title>ubuntu硬盘分区调整大小 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/tags/笔记/index.html">
+  <meta name="description" content="1.下载gparted 直接resize
+
+如果要resize的是根目录 roothttp://gparted.sourceforge.net/liveusb.php#linux-method-a按照 1 或 2 或 3 或 4来操作或者直接用自带的make startup disk????感觉可以有如果用4的话，先下载iso文件然后烧到usb上具体做法（要非常小心，不然会洗掉硬盘分区）插上usb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu硬盘分区调整大小">
+<meta property="og:url" content="http://yoursite.com/2016/05/31/ubuntu硬盘分区调整大小/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="1.下载gparted 直接resize
+
+如果要resize的是根目录 roothttp://gparted.sourceforge.net/liveusb.php#linux-method-a按照 1 或 2 或 3 或 4来操作或者直接用自带的make startup disk????感觉可以有如果用4的话，先下载iso文件然后烧到usb上具体做法（要非常小心，不然会洗掉硬盘分区）插上usb">
+<meta property="og:updated_time" content="2016-05-30T15:50:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="ubuntu硬盘分区调整大小">
+<meta name="twitter:description" content="1.下载gparted 直接resize
+
+如果要resize的是根目录 roothttp://gparted.sourceforge.net/liveusb.php#linux-method-a按照 1 或 2 或 3 或 4来操作或者直接用自带的make startup disk????感觉可以有如果用4的话，先下载iso文件然后烧到usb上具体做法（要非常小心，不然会洗掉硬盘分区）插上usb">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -61,46 +72,61 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-ubuntu硬盘分区调整大小" class="post-ubuntu硬盘分区调整大小 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2016/04/17/cs188-AI-笔记之uninformed-search/">cs188(AI)笔记之uninformed search</a>
+    <h1 class="entry-title article-title">
+      ubuntu硬盘分区调整大小
     </h1>
   
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">
-    <time datetime="2016-04-17T07:34:41.000Z" class="entry-date">
-        2016-04-17
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/05/31/ubuntu硬盘分区调整大小/" data-id="ciou6ywu40007xj064qrcebk7" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>1.下载gparted 直接resize</p>
+<ol>
+<li>如果要resize的是根目录 root<br><a href="http://gparted.sourceforge.net/liveusb.php#linux-method-a" target="_blank" rel="external">http://gparted.sourceforge.net/liveusb.php#linux-method-a</a><br>按照 1 或 2 或 3 或 4来操作<br>或者直接用自带的make startup disk????感觉可以有<br>如果用4的话，先下载iso文件<br>然后烧到usb上<br>具体做法（要非常小心，不然会洗掉硬盘分区）<br>插上usb 输入ls /dev/sd<em><br>然后拔掉usb 再重新输入ls /dev/sd</em> 看看哪个少了，比如说/dev/sde,<br>然后执行sudo dd if=/path-to-gparted-live.x.y.z-w.iso of=/dev/sde bs=4M; sync<br>之后参照<a href="http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted" target="_blank" rel="external">http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted</a><br>实际上一路回车就可以。。。</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2016/05/31/ubuntu硬盘分区调整大小/">
+    <time datetime="2016-05-30T15:49:52.000Z" class="entry-date">
+        2016-05-31
     </time>
 </a>
     
     
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
-
     </footer>
 </article>
-  
-  
-    </div></section>
-  
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+    
+        <span class="nav-next"><a href="/2016/05/28/LQR/" rel="next">linear-quadratic regulation LQR <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
