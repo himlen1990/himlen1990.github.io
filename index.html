@@ -84,10 +84,7 @@
 
     <div class="entry-content">
       
-        <p>1.下载gparted 直接resize</p>
-<ol>
-<li>如果要resize的是根目录 root<br><a href="http://gparted.sourceforge.net/liveusb.php#linux-method-a" target="_blank" rel="external">http://gparted.sourceforge.net/liveusb.php#linux-method-a</a><br>按照 1 或 2 或 3 或 4来操作<br>或者直接用自带的make startup disk????感觉可以有<br>如果用4的话，先下载iso文件<br>然后烧到usb上<br>具体做法（要非常小心，不然会洗掉硬盘分区）<br>插上usb 输入ls /dev/sd<em><br>然后拔掉usb 再重新输入ls /dev/sd</em> 看看哪个少了，比如说/dev/sde,<br>然后执行sudo dd if=/path-to-gparted-live.x.y.z-w.iso of=/dev/sde bs=4M; sync<br>之后参照<a href="http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted" target="_blank" rel="external">http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted</a><br>实际上一路回车就可以。。。</li>
-</ol>
+        <h2 id="下载gparted-直接resize"><a href="#下载gparted-直接resize" class="headerlink" title="下载gparted 直接resize"></a>下载gparted 直接resize</h2><h2 id="如果要resize的是根目录-root"><a href="#如果要resize的是根目录-root" class="headerlink" title="如果要resize的是根目录 root"></a>如果要resize的是根目录 root</h2><p><a href="http://gparted.sourceforge.net/liveusb.php#linux-method-a" target="_blank" rel="external">http://gparted.sourceforge.net/liveusb.php#linux-method-a</a><br>按照 1 或 2 或 3 或 4来操作<br>或者直接用自带的make startup disk????感觉可以有<br>如果用4的话，先下载iso文件<br>然后烧到usb上<br>具体做法（要非常小心，不然会洗掉硬盘分区）<br>插上usb 输入ls /dev/sd<em><br>然后拔掉usb 再重新输入ls /dev/sd</em> 看看哪个少了，比如说/dev/sde,<br>然后执行sudo dd if=/path-to-gparted-live.x.y.z-w.iso of=/dev/sde bs=4M; sync<br>之后参照<a href="http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted" target="_blank" rel="external">http://askubuntu.com/questions/430956/how-to-resize-the-root-partition-using-gparted</a><br>实际上一路回车就可以。。。</p>
 
       
     </div><!-- .entry-content -->
