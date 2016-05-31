@@ -26,7 +26,8 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/contr">
 <meta property="og:image" content="http://yoursite.com/../images/finitedifferences.png">
 <meta property="og:image" content="http://yoursite.com/../images/2linkarm.gif">
-<meta property="og:updated_time" content="2016-05-31T01:24:05.000Z">
+<meta property="og:image" content="http://yoursite.com/../images/3linkarm.gif">
+<meta property="og:updated_time" content="2016-05-31T01:31:10.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linear-quadratic regulation LQR">
 <meta name="twitter:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。
@@ -110,7 +111,7 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <p>$ \dot{x} = f(x,u) $</p>
 <p>A,B可以通过下式计算</p>
 <p>$ A = \frac{\partial f(x,u)}{\partial x}$ , $ B = \frac{\partial f(x,u)}{\partial u} $</p>
-<p>控制3-link的机械臂的时候，我们假设控制的是一个模拟系统，或者至少我们能得到一个真实模型，然后用有限差分来算这些值。有限差分背后是思想不外乎是通过近似函数f在靠近点x的地方变换速率。我们可以通过对靠近x的左右两个点来对f(x)进行采样，从而求得$\dot{f}(x).比如说下面这个一维系统：</p>
+<p>控制3连杆的机械臂的时候，我们假设控制的是一个模拟系统，或者至少我们能得到一个真实模型，然后用有限差分来算这些值。有限差分背后是思想不外乎是通过近似函数f在靠近点x的地方变换速率。我们可以通过对靠近x的左右两个点来对f(x)进行采样，从而求得$\dot{f}(x).比如说下面这个一维系统：</p>
 <p><img src="../images/finitedifferences.png" alt=""></p>
 <p>上图中，蓝色的点是我们现在的状态x，红色的点代表采样点$x + \Delta x$和$x - \Delta x$。由此我们可以算出</p>
 <p>$\dot{f}(x) \approx \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}$</p>
@@ -123,7 +124,8 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <p>而在离散的情况下，你的系统的定义是</p>
 <p>$ x(t + 1) = Ax(t) + Bu(t) $</p>
 <p>如果你在连续的情况下用Riccati方程计算反馈增益矩阵K的话，你的返回值应该是 $\dot{x}. 否则，在离散的情况下我们应该用 algebraic Riccati方程来计算K，此时的返回值是x(t + 1). 这个概念如果混淆了的话，在你程序跑起来的时候就可能会出错。（详细可以参考顶端git给出的LQR相关代码)</p>
-<p><img src="../images/2linkarm.gif" alt=""></p>
+<h2 id="用LQR控制2连杆和3连杆机械臂"><a href="#用LQR控制2连杆和3连杆机械臂" class="headerlink" title="用LQR控制2连杆和3连杆机械臂"></a>用LQR控制2连杆和3连杆机械臂</h2><p>现在我们来看看LQR用在非线性系统会咋样，下图分别是用LQR来控制2连杆和3连杆机械臂，正如你所见，LQR在2连杆的控制上明显优于3连杆的控制。这是因为3连杆的dynamics比2连杆复杂得多。</p>
+<p><img src="../images/2linkarm.gif" alt=""> <img src="../images/3linkarm.gif" alt=""></p>
 
       
     </div><!-- .entry-content -->
