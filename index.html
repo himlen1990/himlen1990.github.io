@@ -160,7 +160,7 @@
 <p>如果你在连续的情况下用Riccati方程计算反馈增益矩阵K的话，你的返回值应该是 $\dot{x}. 否则，在离散的情况下我们应该用 algebraic Riccati方程来计算K，此时的返回值是x(t + 1). 这个概念如果混淆了的话，在你程序跑起来的时候就可能会出错。（详细可以参考顶端git给出的LQR相关代码)</p>
 <h2 id="用LQR控制2连杆和3连杆机械臂"><a href="#用LQR控制2连杆和3连杆机械臂" class="headerlink" title="用LQR控制2连杆和3连杆机械臂"></a>用LQR控制2连杆和3连杆机械臂</h2><p>现在我们来看看LQR用在非线性系统会咋样，下图分别是用LQR来控制2连杆和3连杆机械臂，正如你所见，LQR在2连杆的控制上明显优于3连杆的控制。这是因为3连杆的dynamics比2连杆复杂得不止一点点。（上面提到的非线性性）</p>
 <p><img src="../images/2linkarm.gif" alt=""> <img src="../images/3linkarm.gif" alt=""></p>
-<h2 id="下面改变timesteps看看"><a href="#下面改变timesteps看看" class="headerlink" title="下面改变timesteps看看"></a>下面改变timesteps看看</h2><p>当我第一次测试LQR的时候我以为单纯通过改变更新频度可以让性能显著提升。但结果确是，在3连杆机械臂的控制中，我们几乎看不出来不同更新频度(每0.01s更新一次 vs 0.001s vs 0.0001s)所带来的区别.正如下图所示：</p>
+<h2 id="下面改变timesteps看看"><a href="#下面改变timesteps看看" class="headerlink" title="下面改变timesteps看看"></a>下面改变timesteps看看</h2><p>当我第一次测试LQR的时候我以为单纯通过改变更新频度可以让性能显著提升。但结果却是，在3连杆机械臂的控制中，我们几乎看不出来不同更新频度(每0.01s更新一次 vs 0.001s vs 0.0001s)所带来的区别.正如下图所示：</p>
 <p><img src="../images/3link-01.gif" alt=""> <img src="../images/3link-001.gif" alt=""> <img src="../images/3link-00011.gif" alt=""></p>
 
       
