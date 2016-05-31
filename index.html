@@ -147,6 +147,8 @@
 <p>$ A = \frac{\partial f(x,u)}{\partial x}$ , $ B = \frac{\partial f(x,u)}{\partial u} $</p>
 <p>控制3-link的机械臂的时候，我们假设控制的是一个模拟系统，或者至少我们能得到一个真实模型，然后用有限差分来算这些值。有限差分背后是思想不外乎是通过近似函数f在靠近点x的地方变换速率。我们可以通过对靠近x的左右两个点来对f(x)进行采样，从而求得$\dot{f}(x).比如说下面这个一维系统：</p>
 <p><img src="../images/finitedifferences.png" alt=""></p>
+<p>上图中，蓝色的点是我们现在的状态x，红色的点代表采样点$x + \Delta x$和$x - \Delta x$。由此我们可以算出</p>
+<p>$\dot{f}(x) \approx \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}</p>
 
       
     </div><!-- .entry-content -->

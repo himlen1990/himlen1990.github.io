@@ -25,7 +25,7 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <meta property="og:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。
 Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-regulator/git: https://github.com/studywolf/contr">
 <meta property="og:image" content="http://yoursite.com/../images/finitedifferences.png">
-<meta property="og:updated_time" content="2016-05-31T00:47:36.000Z">
+<meta property="og:updated_time" content="2016-05-31T00:53:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linear-quadratic regulation LQR">
 <meta name="twitter:description" content="关于LQR,在Dewolf大神主页里面已经有比较详尽的描述，在这里主要把英文翻译过来加上一点自己看法以便日后复习。因为以前没学过控制相关课程，所以翻译可能有不恰当的地方。
@@ -111,6 +111,8 @@ Dewolf大神的主页：https://studywolf.wordpress.com/tag/linear-quadratic-reg
 <p>$ A = \frac{\partial f(x,u)}{\partial x}$ , $ B = \frac{\partial f(x,u)}{\partial u} $</p>
 <p>控制3-link的机械臂的时候，我们假设控制的是一个模拟系统，或者至少我们能得到一个真实模型，然后用有限差分来算这些值。有限差分背后是思想不外乎是通过近似函数f在靠近点x的地方变换速率。我们可以通过对靠近x的左右两个点来对f(x)进行采样，从而求得$\dot{f}(x).比如说下面这个一维系统：</p>
 <p><img src="../images/finitedifferences.png" alt=""></p>
+<p>上图中，蓝色的点是我们现在的状态x，红色的点代表采样点$x + \Delta x$和$x - \Delta x$。由此我们可以算出</p>
+<p>$\dot{f}(x) \approx \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}</p>
 
       
     </div><!-- .entry-content -->
