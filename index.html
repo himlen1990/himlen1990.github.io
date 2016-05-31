@@ -149,6 +149,10 @@
 <p><img src="../images/finitedifferences.png" alt=""></p>
 <p>上图中，蓝色的点是我们现在的状态x，红色的点代表采样点$x + \Delta x$和$x - \Delta x$。由此我们可以算出</p>
 <p>$\dot{f}(x) \approx \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x}$</p>
+<p>正如我们所见，实际上函数f在点x上的斜率是图上的蓝色线，而我们算出来的是红色的线。而且这个近似只在x（蓝色的点）附近比较准确。</p>
+<p>在我们的多维系统中，想用有限差分来计算状态的导数和输入，我们可以一次只改变一个变量，然后对系统的值进行采样（偏导数的概念）。或者可以参考下面伪代码:</p>
+<p>eps = 1e-5<br>A = np.zeros((len(current_state), len(current_state))<br>for ii in range(len(current_state)):<br>    x = current_state.copy()<br>    x[ii] += eps<br>    x_inc = simulate_system(state=x, input=control_signal)<br>    x = current_state.copy()<br>    x[ii] -= eps<br>    x_dec = simulate_system(state=x, input=control_signal)<br>    A[:,ii] = (x_inc - x_dec) / (2 * eps)</p>
+<p>B = np.zeros((len(current_state), len(control_signal))<br>for ii in range(len(control_signal)):<br>    u = control_signal.copy()<br>    u[ii] += eps<br>    x_inc = simulate_system(state=current_state, input=u)<br>    u = control_signal.copy()<br>    u[ii] -= eps<br>    x_dec = simulate_system(state=current_state, input=u)<br>    B[:,ii] = (x_inc - x_dec) / (2 * eps)</p>
 
       
     </div><!-- .entry-content -->
