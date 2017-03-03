@@ -91,7 +91,7 @@
 <p>这时候问题来了，对于distance的函数，我们既可以选择L1(Manhattan) distance<br>即$$ d_{1}(I_{1},I_{2})=\sum_{}{|I^{p}_{1}-I^{p}_{2}|} $$<br>也可以选L2(Euclidean) distance，即 $$ d_{2}(I_{1},I_{2})=\sqrt{\sum_{}{(I^{p}_{1}-I^{p}_{2})^{2}}} $$</p>
 <p>而k值的选择也是多种多样，我们把这些参数统称为hyperparameters。 一般地，这些hyperparameters都是problem-dependent的。给定某些条件，为了选择一组合适的hyperparameters，一个常用的方法是留一部份train data作为验证集，即validationdata，验证集不会被用来训练，相当于调参时候的测试集。把这些个train data扔进去不同hyperparameters中测试，看看哪些个参数在测试validation时的性能最好，选择好参数后才用test data测试模型性能。</p>
 <p>当data set不够大时，一般时候cross-validation，也就是把train data平均分成n分（如图为5-folds-cross-validation），然后把每一fold轮流作为validation set，最后取5次score的平均来评价这一组hyperparameters。<br><img src="../images/cs231n/l2_2.png" alt=""></p>
-<h2 id="稍微高级一点的分类器-线性分类器"><a href="#稍微高级一点的分类器-线性分类器" class="headerlink" title="稍微高级一点的分类器: 线性分类器"></a>稍微高级一点的分类器: 线性分类器</h2><p>$$ f(x,W)=Wx$$<br>其中W为训练好的矩阵.<br><img src="../images/cs231n/l2_3.png" alt=""></p>
+<h2 id="稍微高级一点的分类器-线性分类器"><a href="#稍微高级一点的分类器-线性分类器" class="headerlink" title="稍微高级一点的分类器: 线性分类器"></a>稍微高级一点的分类器: 线性分类器</h2><p>$$ f(x,W)=Wx$$<br>其中W为训练好的矩阵.假设下面的猫的图片只包含4个像素，根据给定的W矩阵，得到的dog的score最高，因此该测试图片被分为dog类别。<br><img src="../images/cs231n/l2_3.png" alt=""></p>
 
       
     </div><!-- .entry-content -->
