@@ -89,6 +89,7 @@
 <p>最简单的分类方法（最邻近邻居NN）：基于模板匹配的方式寻找与测试图像距离最近的训练图像，该训练图像所在类别即为目标图像类别。<br><img src="../images/cs231n/l2_1.png" alt=""></p>
 <p>稍微改进一点的方法: kNN: 在训练图像集中找到k个最邻近邻居，在这k个里面得票最多的类别为测试图像的类别。</p>
 <p>这时候问题来了，对于distance的函数，我们既可以选择L1(Manhattan) distance<br>即$$ d_{1}(I_{1},I_{2})=\sum_{}{|I^{p}_{1}-I^{p}_{2}|} $$<br>也可以选L2(Euclidean) distance，即 $$ d_{2}(I_{1},I_{2})=\sqrt{\sum_{}{(I^{p}_{1}-I^{p}_{2})^{2}}} $$</p>
+<p>而k值的选择也是多种多样，我们把这些参数统称为hyperparameters.一般地，这些hyperparameters都是problem-dependent的。给定某些条件，为了选择一组合适的hyperparameters，一个常用的方法是留一部份train data作为验证集，即validationdata，验证集不会被用来训练，相当于调参时候的测试集。把这些个train data扔进去不同hyperparameters中测试，看看哪些个参数在测试validation时的性能最好，选择好参数后才用test data测试模型性能<br>当data set不够大时，一般时候cross-validation，也就是把train data平均分成n分（如图为5-folds-cross-validation），然后把每一fold轮流作为validation set，最后取5次score的平均来评价这一组hyperparameters。<br>![]（../images/cs231n/l2_2.png）</p>
 
       
     </div><!-- .entry-content -->
