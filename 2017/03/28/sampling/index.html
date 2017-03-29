@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/28/sampling/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="为什么要采样采样的问题简单来说给定一个概率分布f(x)，通过计算机得到符合这个分布的样本。然而我们的计算机只能生成平均分布的样本（利用线性同余法），那么问题来了，对于各种各样的f(x)，我们怎么通过平均分布来得到符合f(x)的样本?比如说我们想要得到符合正态分布的样本，一个简单的方法就是通过调用像numpy.random.normal的函数。但这些公用化接口只会提供标准的分布，对于现实中碰到的复杂">
-<meta property="og:updated_time" content="2017-03-29T08:13:01.000Z">
+<meta property="og:updated_time" content="2017-03-29T08:14:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="采样(sampling)">
 <meta name="twitter:description" content="为什么要采样采样的问题简单来说给定一个概率分布f(x)，通过计算机得到符合这个分布的样本。然而我们的计算机只能生成平均分布的样本（利用线性同余法），那么问题来了，对于各种各样的f(x)，我们怎么通过平均分布来得到符合f(x)的样本?比如说我们想要得到符合正态分布的样本，一个简单的方法就是通过调用像numpy.random.normal的函数。但这些公用化接口只会提供标准的分布，对于现实中碰到的复杂">
@@ -297,7 +297,7 @@
       
           
         <h2 id="为什么要采样"><a href="#为什么要采样" class="headerlink" title="为什么要采样"></a>为什么要采样</h2><p>采样的问题简单来说给定一个概率分布f(x)，通过计算机得到符合这个分布的样本。然而我们的计算机只能生成平均分布的样本（利用线性同余法），那么问题来了，对于各种各样的f(x)，我们怎么通过平均分布来得到符合f(x)的样本?<br>比如说我们想要得到符合正态分布的样本，一个简单的方法就是通过调用像numpy.random.normal的函数。但这些公用化接口只会提供标准的分布，对于现实中碰到的复杂的f(x)，我们就需要自己来做采样这个事。</p>
-<h2 id="蒙特卡罗采样"><a href="#蒙特卡罗采样" class="headerlink" title="蒙特卡罗采样"></a>蒙特卡罗采样</h2><p>简单，粗暴，几乎对所有场景有效（当然你得有足够大的随机样本数），当然效率也很低。<br>一个大家都熟知的例子就是利用蒙特卡罗采样来计算圆周率。在一个正方形内部，随机产生10000个点（即10000个坐标对 (x, y)），计算它们与中心点的距离，从而判断是否落在圆的内部。落在圆内的点与所有点的比即为圆的面积与正方形面积的比。<br>$$ \frac{圆面积}{方形面积}= \frac{\pi r^{2}}{2r^{2]} $$</p>
+<h2 id="蒙特卡罗采样"><a href="#蒙特卡罗采样" class="headerlink" title="蒙特卡罗采样"></a>蒙特卡罗采样</h2><p>简单，粗暴，几乎对所有场景有效（当然你得有足够大的随机样本数），当然效率也很低。<br>一个大家都熟知的例子就是利用蒙特卡罗采样来计算圆周率。在一个正方形内部，随机产生10000个点（即10000个坐标对 (x, y)），计算它们与中心点的距离，从而判断是否落在圆的内部。落在圆内的点与所有点的比即为圆的面积与正方形面积的比。<br>$ \frac{圆面积}{方形面积}= \frac{\pi r^{2}}{2r^{2]} $</p>
 
       
     </div>
@@ -309,7 +309,7 @@
         <p><span>本文标题:</span><a href="/2017/03/28/sampling/">采样(sampling)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Himlen</a></p>
         <p><span>发布时间:</span>2017-03-28, 18:53:48</p>
-        <p><span>最后更新:</span>2017-03-29, 17:13:01</p>
+        <p><span>最后更新:</span>2017-03-29, 17:14:43</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/28/sampling/" title="采样(sampling)">http://yoursite.com/2017/03/28/sampling/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/28/sampling/　　作者: Himlen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
