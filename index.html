@@ -262,6 +262,64 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-sampling2" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/30/sampling2/" class="article-date">
+      <time datetime="2017-03-30T02:50:50.000Z" itemprop="datePublished">2017-03-30</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/30/sampling2/">采样(sampling)2</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="接受-拒绝采样-Acceptance-Rejection-Sampling-（原文地址http-aidiary-hatenablog-com-entry-20140712-1405165815）"><a href="#接受-拒绝采样-Acceptance-Rejection-Sampling-（原文地址http-aidiary-hatenablog-com-entry-20140712-1405165815）" class="headerlink" title="接受-拒绝采样(Acceptance-Rejection Sampling) （原文地址http://aidiary.hatenablog.com/entry/20140712/1405165815）"></a>接受-拒绝采样(Acceptance-Rejection Sampling) （原文地址<a href="http://aidiary.hatenablog.com/entry/20140712/1405165815）" target="_blank" rel="external">http://aidiary.hatenablog.com/entry/20140712/1405165815）</a></h2><p>之前提到的重点采样主要解决的是在样本数较少的时候在某些地方无法采样导致无法求到近似期待值的问题。在这里，我们讨论另外一个问题，就是给定一个任意的目标概率分布函数f(x)我们怎么生成对应的样本(x1,x2,x3…xm)。</p>
+<p>给定一个目标分布f,我们想要得到服从f的样本但无法直接采样，这时接受-拒绝采样就闪亮登场了。给定一个目标分布f，我们不从f中直接生成样本，而是从建议分布g中生成样本，由于g是由我们自己定义的，因此我们可以设置成简单的均匀分布或者正态分布然后直接得到从g生成的样本，对于满足条件的样本，我们接受，即把这些样本看作从f中生成的样本，对于不满足条件的样本，我们单纯地把它们扔掉。至于这个条件，我们将在下面详细说明。</p>
+<p>接受-拒绝采样法生成服从目标分布f的样本X：<br>1.从建议分布g生成随机样本Y<br>2.从[0,1]区间内生成均匀分布的随机数<br>3.U<em>M</em>g(Y)&lt;=f(Y)的话接受Y为服从目标分布f的样本X<br>4.对于不满足条件3的样本Y，我们把这次采样作废，回到步骤1。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-sampling" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
