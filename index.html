@@ -298,7 +298,7 @@
 <p>比如，计算函数 y = x2 在 [0, 1] 区间的积分，就是求出下图红色部分的面积。<br><img src="../images/sampling/s-3.jpg" alt=""><br>这个函数在 (1,1) 点的取值为1，所以整个红色区域在一个面积为1的正方形里面。在该正方形内部，产生大量随机点，可以计算出有多少点落在红色区域（判断条件 y &lt; x2）。这个比重就是所要求的积分值。</p>
 <p>再举一个实际例子</p>
 <p>证券市场有时交易活跃，有时交易冷清。下面是你对市场的预测。<br>如果交易冷清，你会以平均价11元，卖出5万股。<br>如果交易活跃，你会以平均价8元，卖出10万股。<br>如果交易温和，你会以平均价10元，卖出7.5万股。<br>已知你的成本在每股5.5元到7.5元之间，平均是6.5元。请问接下来的交易，你的净利润会是多少？<br>取1000个随机样本，每个样本有两个数值：一个是证券的成本（5.5元到7.5元之间的均匀分布），另一个是当前市场状态（冷清、活跃、温和，各有三分之一可能）。<br><img src="../images/sampling/s-4.png" alt=""><br>模拟计算得到，平均净利润为92, 427美元</p>
-<h2 id="重点采样-Importance-sampling"><a href="#重点采样-Importance-sampling" class="headerlink" title="重点采样(Importance sampling)"></a>重点采样(Importance sampling)</h2><p>正如前面所说，用蒙特卡罗来计算积分需要大量的样本，这导致了蒙特卡罗法效率很低。举个例子，我们想要计算下式的期待值<br>$$\mathbb{E}<em>f[h(X)]=\int h(x)f(x)dx$$<br>这里f(x)是概率分布函数，h(x)为任意的函数，用蒙特卡罗积分来计算上面期待值的方法是：先从f(x)里面生成m个样本(x1,x2,x3…xm)，然后通过<br>$$ \overline{h</em>{m}} $$ </p>
+<h2 id="重点采样-Importance-sampling"><a href="#重点采样-Importance-sampling" class="headerlink" title="重点采样(Importance sampling)"></a>重点采样(Importance sampling)</h2><p>正如前面所说，用蒙特卡罗来计算积分需要大量的样本，这导致了蒙特卡罗法效率很低。举个例子，我们想要计算下式的期待值<br>$$\mathbb{E}_f[h(X)]=\int h(x)f(x)dx$$<br>这里f(x)是概率分布函数，h(x)为任意的函数，用蒙特卡罗积分来计算上面期待值的方法是：先从f(x)里面生成m个样本(x1,x2,x3…xm)，然后通过</p>
 
       
     </div>
