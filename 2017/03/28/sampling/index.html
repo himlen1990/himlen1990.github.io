@@ -25,7 +25,7 @@
 <meta property="og:image" content="http://yoursite.com/../images/sampling/s-2.gif">
 <meta property="og:image" content="http://yoursite.com/../images/sampling/s-3.jpg">
 <meta property="og:image" content="http://yoursite.com/../images/sampling/s-4.png">
-<meta property="og:updated_time" content="2017-03-30T01:09:49.000Z">
+<meta property="og:updated_time" content="2017-03-30T01:10:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="采样(sampling)">
 <meta name="twitter:description" content="为什么要采样采样的问题简单来说给定一个概率分布f(x)，通过计算机得到符合这个分布的样本。然而我们的计算机只能生成平均分布的样本（利用线性同余法），那么问题来了，对于各种各样的f(x)，我们怎么通过平均分布来得到符合f(x)的样本?比如说我们想要得到符合正态分布的样本，一个简单的方法就是通过调用像numpy.random.normal的函数。但这些公用化接口只会提供标准的分布，对于现实中碰到的复杂">
@@ -309,7 +309,7 @@
 <p>再举一个实际例子</p>
 <p>证券市场有时交易活跃，有时交易冷清。下面是你对市场的预测。<br>如果交易冷清，你会以平均价11元，卖出5万股。<br>如果交易活跃，你会以平均价8元，卖出10万股。<br>如果交易温和，你会以平均价10元，卖出7.5万股。<br>已知你的成本在每股5.5元到7.5元之间，平均是6.5元。请问接下来的交易，你的净利润会是多少？<br>取1000个随机样本，每个样本有两个数值：一个是证券的成本（5.5元到7.5元之间的均匀分布），另一个是当前市场状态（冷清、活跃、温和，各有三分之一可能）。<br><img src="../images/sampling/s-4.png" alt=""><br>模拟计算得到，平均净利润为92, 427美元</p>
 <h2 id="重点采样-Importance-sampling"><a href="#重点采样-Importance-sampling" class="headerlink" title="重点采样(Importance sampling)"></a>重点采样(Importance sampling)</h2><p>正如前面所说，用蒙特卡罗来计算积分需要大量的样本，这导致了蒙特卡罗法效率很低。举个例子，我们想要计算下式的期待值<br>$$\mathbb{E}_f[h(X)]=\int h(x)f(x)dx$$<br>这里f(x)是概率分布函数，h(x)为任意的函数，用蒙特卡罗积分来计算上面期待值的方法是：先从f(x)里面生成m个样本(x1,x2,x3…xm)，然后通过</p>
-<p>$$\bar{h}_{m} = \frac{1}{m} \sum$$</p>
+<p>$$\bar{h}_{m} = \frac{1}{m} \sum_{j=1}$$</p>
 
       
     </div>
@@ -321,7 +321,7 @@
         <p><span>本文标题:</span><a href="/2017/03/28/sampling/">采样(sampling)</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Himlen</a></p>
         <p><span>发布时间:</span>2017-03-28, 18:53:48</p>
-        <p><span>最后更新:</span>2017-03-30, 10:09:49</p>
+        <p><span>最后更新:</span>2017-03-30, 10:10:16</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/03/28/sampling/" title="采样(sampling)">http://yoursite.com/2017/03/28/sampling/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/03/28/sampling/　　作者: Himlen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
