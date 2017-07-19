@@ -262,6 +262,119 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-tx1入手及备忘" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/07/19/tx1入手及备忘/" class="article-date">
+      <time datetime="2017-07-19T00:22:24.000Z" itemprop="datePublished">2017-07-19</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/19/tx1入手及备忘/">tx1入手及备忘</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>jetpack安装:<br>实际上是刷板子，所以除了tx1以外还需要一个主机.按照他说的步骤安装完成进入刷板子的步骤时：<br>1.关tx1电源,拔电源线<br>2.接上miniusb<br>3.接tx1电源<br>4.按一下power按钮放开，绿灯亮后按住rec按钮，同时按一下RESET按钮，两秒后再放开REC按钮<br>5.在主机上面打开终端执行lsusb，如果看到NVIDA CORP则可以按ENTER进入刷机，否则重复1-4.</p>
+<p>风扇不转：<br>因为HDMI原因风扇不转时，在<a href="https://github.com/dusty-nv/jetson-scripts/blob/master/jetson_max_l4t.sh把脚本下下来运行一下就ok" target="_blank" rel="external">https://github.com/dusty-nv/jetson-scripts/blob/master/jetson_max_l4t.sh把脚本下下来运行一下就ok</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-graphcut" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/04/02/graphcut/" class="article-date">
+      <time datetime="2017-04-02T01:16:16.000Z" itemprop="datePublished">2017-04-02</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/02/graphcut/">图像分割之graph cut</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>最近无意中看到一个比较经典的文章”Interactive Graph Cuts for Optimal Boundary &amp; Region Segmentation of Objects in N-D Images”. </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-sampling2" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -781,148 +894,10 @@
 
 
   
-    <article id="post-cs188-AI-笔记之uninformed-search" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/" class="article-date">
-      <time datetime="2016-04-17T07:34:41.000Z" itemprop="datePublished">2016-04-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/17/cs188-AI-笔记之uninformed-search/">cs188(AI)笔记之uninformed search</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Uninformed Search Methods</p>
-<ul>
-<li>Depth-First Search</li>
-<li>Breadth-First Search</li>
-<li>Uniform-Cost Search</li>
-</ul>
-<p>A search problem consists of </p>
-<ul>
-<li>state space</li>
-<li>successor function(with action,costs) such as “north, 1.0”</li>
-<li>srart state and goal test</li>
-</ul>
-<p>A solution is a sequence of actions (a plan) which trasforms the start state to  a goal state</p>
-<p>例子:<br><img src="../images/cs188-1-1.png" alt=""><br>计算state space size例子<br><img src="../images/cs188-1-2.png" alt=""></p>
-<h2 id="Seach-algorithm"><a href="#Seach-algorithm" class="headerlink" title="Seach algorithm:"></a>Seach algorithm:</h2><p>当加入cost因素后：<br>DFS和BFS属于非启发式算法（无视cost)<br>uninform cost search UCS 属于启发式算法(基于贪婪算法,cost小的路径优先搜索)</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/笔记/">笔记</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo备忘" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/17/hexo备忘/" class="article-date">
-      <time datetime="2016-04-17T04:12:48.000Z" itemprop="datePublished">2016-04-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/17/hexo备忘/">hexo备忘</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>install nvm<br>$ git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a> ~/.nvm<br>$ source ~/.nvm/nvm.sh</p>
-<h2 id="check-nvm"><a href="#check-nvm" class="headerlink" title="check nvm "></a>check nvm </h2><p>$ nvm ls-remote<br>$ nvm install 0.12.7 (or other version)<br>$ node -v (check version)<br>$ nvm alias default v0.12.7</p>
-<p>add to .bashrc<br>if [[ -s ~/.nvm/nvm.sh ]];<br> then source ~/.nvm/nvm.sh<br>fi</p>
-<p>$ npm install -g hexo<br>$ hexo init blog<br>$ cd blog<br>$ npm install<br>for testing:<br>$ hexo server    </p>
-<p>create a github repository</p>
-<p>open blog/_config.yml<br>deploy:<br>    type: git<br>    repository: xxxx.github.io.git<br>    branch: master</p>
-<p>npm install hexo-deployer-git –save<br>hexo deploy -g<br>then you can see your blog in (username).github.io</p>
-<h2 id="everytime-you-change"><a href="#everytime-you-change" class="headerlink" title="everytime you change:"></a>everytime you change:</h2><p>hexo deploy -g or hexo d -g</p>
-<h2 id="change-theme"><a href="#change-theme" class="headerlink" title="change theme"></a>change theme</h2><p>copy the theme to your blog/themes file by using git clone xxxx theme/theme_name</p>
-<p>then edit blog/_config.yml</p>
-<p>theme: (theme name)</p>
-<h2 id="write-a-new-blog"><a href="#write-a-new-blog" class="headerlink" title="write a new blog"></a>write a new blog</h2><p>hexo new （title）</p>
-<h2 id="delete-a-bolg"><a href="#delete-a-bolg" class="headerlink" title="delete a bolg"></a>delete a bolg</h2><p>delete pose under source/_pose folder<br>hexo clean<br>hexo d -g</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 </div>
       <footer id="footer">
