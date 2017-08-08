@@ -15,19 +15,22 @@
 
 
 
-<meta name="description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
+<meta name="description" content="JetPack安装完系统想要安装cuda时出现的问题。一直无法解释nameserver
+temporary failure resolving ‘ports ubuntu….暂时性解决:echo “nameserver 8.8.8.8” | sudo tee /etc/resolv.conf &amp;gt; /dev/null
+永久设置:echo “nameserver 8.8.8.8” | sudo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo备忘">
-<meta property="og:url" content="http://yoursite.com/2016/04/17/hexo备忘/index.html">
+<meta property="og:title" content="tx2安装时DNS问题">
+<meta property="og:url" content="http://yoursite.com/2017/08/09/tx2安装时DNS问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
-<meta property="og:updated_time" content="2017-03-02T14:57:01.000Z">
+<meta property="og:description" content="JetPack安装完系统想要安装cuda时出现的问题。一直无法解释nameserver
+temporary failure resolving ‘ports ubuntu….暂时性解决:echo “nameserver 8.8.8.8” | sudo tee /etc/resolv.conf &amp;gt; /dev/null
+永久设置:echo “nameserver 8.8.8.8” | sudo">
+<meta property="og:updated_time" content="2017-08-08T15:10:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo备忘">
-<meta name="twitter:description" content="node.jsinstall nvm$ git clone https://github.com/creationix/nvm.git ~/.nvm$ source ~/.nvm/nvm.sh
-check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check version)$ nvm alias de">
+<meta name="twitter:title" content="tx2安装时DNS问题">
+<meta name="twitter:description" content="JetPack安装完系统想要安装cuda时出现的问题。一直无法解释nameserver
+temporary failure resolving ‘ports ubuntu….暂时性解决:echo “nameserver 8.8.8.8” | sudo tee /etc/resolv.conf &amp;gt; /dev/null
+永久设置:echo “nameserver 8.8.8.8” | sudo">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -59,7 +62,7 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>hexo备忘 | Hexo</title>
+<title>tx2安装时DNS问题 | Hexo</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -259,11 +262,11 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-hexo备忘" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-tx2安装时DNS问题" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/17/hexo备忘/" class="article-date">
-      <time datetime="2016-04-17T04:12:48.000Z" itemprop="datePublished">2016-04-17</time>
+      <a href="/2017/08/09/tx2安装时DNS问题/" class="article-date">
+      <time datetime="2017-08-08T15:07:10.000Z" itemprop="datePublished">2017-08-09</time>
 </a>
 
 
@@ -278,7 +281,7 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
         
   
     <h1 class="article-title" itemprop="name">
-      hexo备忘
+      tx2安装时DNS问题
     </h1>
   
 
@@ -295,19 +298,9 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>install nvm<br>$ git clone <a href="https://github.com/creationix/nvm.git" target="_blank" rel="external">https://github.com/creationix/nvm.git</a> ~/.nvm<br>$ source ~/.nvm/nvm.sh</p>
-<h2 id="check-nvm"><a href="#check-nvm" class="headerlink" title="check nvm "></a>check nvm </h2><p>$ nvm ls-remote<br>$ nvm install 0.12.7 (or other version)<br>$ node -v (check version)<br>$ nvm alias default v0.12.7</p>
-<p>add to .bashrc<br>if [[ -s ~/.nvm/nvm.sh ]];<br> then source ~/.nvm/nvm.sh<br>fi</p>
-<p>$ npm install -g hexo<br>$ hexo init blog<br>$ cd blog<br>$ npm install<br>for testing:<br>$ hexo server    </p>
-<p>create a github repository</p>
-<p>open blog/_config.yml<br>deploy:<br>    type: git<br>    repository: xxxx.github.io.git<br>    branch: master</p>
-<p>npm install hexo-deployer-git –save<br>hexo deploy -g<br>then you can see your blog in (username).github.io</p>
-<h2 id="everytime-you-change"><a href="#everytime-you-change" class="headerlink" title="everytime you change:"></a>everytime you change:</h2><p>hexo deploy -g or hexo d -g</p>
-<h2 id="change-theme"><a href="#change-theme" class="headerlink" title="change theme"></a>change theme</h2><p>copy the theme to your blog/themes file by using git clone xxxx theme/theme_name</p>
-<p>then edit blog/_config.yml</p>
-<p>theme: (theme name)</p>
-<h2 id="write-a-new-blog"><a href="#write-a-new-blog" class="headerlink" title="write a new blog"></a>write a new blog</h2><p>hexo new （title）</p>
-<h2 id="delete-a-bolg"><a href="#delete-a-bolg" class="headerlink" title="delete a bolg"></a>delete a bolg</h2><p>delete pose under source/_pose folder<br>hexo clean<br>hexo d -g</p>
+        <p>JetPack安装完系统想要安装cuda时出现的问题。一直无法解释nameserver</p>
+<p>temporary failure resolving ‘ports ubuntu….<br>暂时性解决:<br>echo “nameserver 8.8.8.8” | sudo tee /etc/resolv.conf &gt; /dev/null</p>
+<p>永久设置:<br>echo “nameserver 8.8.8.8” | sudo tee /etc/resolvconf/resolv.conf.d/base &gt; /dev/null</p>
 
       
     </div>
@@ -316,13 +309,13 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/04/17/hexo备忘/">hexo备忘</a></p>
+        <p><span>本文标题:</span><a href="/2017/08/09/tx2安装时DNS问题/">tx2安装时DNS问题</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Himlen</a></p>
-        <p><span>发布时间:</span>2016-04-17, 13:12:48</p>
-        <p><span>最后更新:</span>2017-03-02, 23:57:01</p>
+        <p><span>发布时间:</span>2017-08-09, 00:07:10</p>
+        <p><span>最后更新:</span>2017-08-09, 00:10:39</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/04/17/hexo备忘/" title="hexo备忘">http://yoursite.com/2016/04/17/hexo备忘/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/04/17/hexo备忘/　　作者: Himlen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/08/09/tx2安装时DNS问题/" title="tx2安装时DNS问题">http://yoursite.com/2017/08/09/tx2安装时DNS问题/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/08/09/tx2安装时DNS问题/　　作者: Himlen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -334,12 +327,12 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/">
-                    cs188(AI)笔记之uninformed search
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/08/03/更改网页ip/">
+                    更改网页ip
                 </a>
             </div>
-        
         
     </nav>
 
@@ -349,7 +342,7 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#node-js"><span class="toc-number">1.</span> <span class="toc-text">node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#check-nvm"><span class="toc-number">2.</span> <span class="toc-text">check nvm </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#everytime-you-change"><span class="toc-number">3.</span> <span class="toc-text">everytime you change:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#change-theme"><span class="toc-number">4.</span> <span class="toc-text">change theme</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#write-a-new-blog"><span class="toc-number">5.</span> <span class="toc-text">write a new blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#delete-a-bolg"><span class="toc-number">6.</span> <span class="toc-text">delete a bolg</span></a></li></ol>
+            
         
     </div>
     <style>
@@ -385,7 +378,7 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"hexo备忘　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"tx2安装时DNS问题　| Hexo　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -405,15 +398,15 @@ check nvm $ nvm ls-remote$ nvm install 0.12.7 (or other version)$ node -v (check
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/04/17/cs188-AI-笔记之uninformed-search/" title="上一篇: cs188(AI)笔记之uninformed search">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/08/03/更改网页ip/" title="下一篇: 更改网页ip">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 

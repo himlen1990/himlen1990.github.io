@@ -262,6 +262,64 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-tx2安装时DNS问题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/09/tx2安装时DNS问题/" class="article-date">
+      <time datetime="2017-08-08T15:07:10.000Z" itemprop="datePublished">2017-08-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/09/tx2安装时DNS问题/">tx2安装时DNS问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>JetPack安装完系统想要安装cuda时出现的问题。一直无法解释nameserver</p>
+<p>temporary failure resolving ‘ports ubuntu….<br>暂时性解决:<br>echo “nameserver 8.8.8.8” | sudo tee /etc/resolv.conf &gt; /dev/null</p>
+<p>永久设置:<br>echo “nameserver 8.8.8.8” | sudo tee /etc/resolvconf/resolv.conf.d/base &gt; /dev/null</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-更改网页ip" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -812,62 +870,6 @@
           
         <p>GMM的原理在网上已经有讲得非常好的文章，（见<a href="http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）" target="_blank" rel="external">http://blog.csdn.net/llp1992/article/details/47058109#gmm与k-means对比）</a></p>
 <p>在这里就不在叙述了。为了防止链接失效，还是把文章粘贴过来。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-numpy备忘" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/17/numpy备忘/" class="article-date">
-      <time datetime="2016-05-17T00:05:38.000Z" itemprop="datePublished">2016-05-17</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/17/numpy备忘/">numpy备忘</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>np.sum(X, axis=i) X为np.array，这个函数的作用就是在n维数组中把第i维加起来，比如说X.shape=(2,2,3) np.sum(X, axis=0) 第一个元素为 X[0][0][0]+ X[1][0][0] 第二个元素为X[0][0][1]+X[1][0][1]如此类推，得出来的新array的shape为(2,3)</p>
 
       
     </div>
