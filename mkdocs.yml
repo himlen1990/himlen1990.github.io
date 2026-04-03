@@ -1,0 +1,13 @@
+site_name: 我的文档站点       # 网站名称
+theme:
+  name: material             # 使用 Material 主题
+  features:
+    - navigation.tabs        # 标签式导航
+    - search.suggest         # 搜索建议
+    - search.highlight       # 搜索高亮
+nav:                         # 文档导航结构
+  - 首页: index.md
+  - 快速开始:
+    - 安装: getting-started/installation.md
+  - 高级用法: usage/advanced.md
+
